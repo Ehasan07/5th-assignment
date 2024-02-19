@@ -6,8 +6,40 @@
     <title>P-Poribahon</title>
     <!--Tailwind and daisy ui-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="styale.css">
+
+    <style>
+        .offer-card {
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .coupon-code {
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+        }
+        .coupon-description {
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+        }
+        .see-all-btn {
+          background-color: #10b981;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 30px;
+          font-size: 16px;
+          font-weight: 600;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 20px;
+          font-family: 'Inter', sans-serif;
+        }
+        .see-all-btn:hover {
+          background-color: #059669;
+        }
+      </style>
 </head>
 <body>
  
@@ -62,7 +94,48 @@
           </div>
 </header>
 
-<main>
+<main class="bg-gray-100 font-sans antialiased text-gray-900">
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-10">
+          <h2 class="text-4xl font-semibold text-gray-800 mb-3">Best offers for you</h2>
+          
+        </div>
+        <div class="flex justify-center gap-10">
+          <!-- Offer 1 -->
+          <div class="offer-card rounded-xl p-6 bg-yellow-500 w-1/3">
+            <div class="flex justify-between items-center">
+              <div class="coupon-description">
+                <p class="text-2xl">15% OFF</p>
+                <p>on your next purchase</p>
+                <p class="text-sm mt-1">use by January 2024</p>
+              </div>
+              <div class="coupon-code text-white text-3xl">NEW15</div>
+            </div>
+            <div class="text-right mt-2">
+              <p class="text-x text-white ">Coupon Code</p>
+            </div>
+          </div>
+          <!-- Offer 2 -->
+          <div class="offer-card rounded-xl p-6 bg-pink-400 w-1/3">
+            <div class="flex justify-between items-center">
+              <div class="coupon-description">
+                <p class="text-2xl">20% OFF</p>
+                <p>on your next purchase</p>
+                <p class="text-sm mt-1">use by January 2024</p>
+              </div>
+              <div class="coupon-code text-white text-3xl">Couple 20</div>
+            </div>
+            <div class="text-right mt-2">
+              <p class="text-x text-white ">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="text-center mb-10">
+        <button class="btn btn-outline btn-success">See All Offers</button>
+    </div>
+      
 
 </main>
 </body>
